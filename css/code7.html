@@ -11,15 +11,19 @@
         }
         nav{
             display: flex;
-            justify-content: space-around;
             background-color: rgb(8, 8, 27);
             color: white;
             padding: 20px;
             align-items: center;
-            border-radius: 30px;
+            border-radius: 50px;
             margin: 10px;
+            gap: 20px;
         }
+       
         .logo{
+            border-radius: 50%;
+            border: 1px solid white;
+            padding: 15px 10px ;
             font-size: large;
             font-weight: bold;
             color: yellow;
@@ -33,19 +37,75 @@
             gap: 20px;
             list-style-type: none;
         }
+
+
+         .navbar{
+            justify-content: space-between;
+
+        }
+        .halfNav{
+            display: flex;
+            gap: 10px;
+        }
+        .thirdNav{
+            justify-content: space-around;
+        }
     </style>
 </head>
 <body>
-    <nav>
+    <nav class="navbar" >
+        <div class="logo">G.<span>D</span> </div>
+      <div class="halfNav">
+          <ul class="list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          
+
+        </ul>
+        <button>Click me </button>
+      </div>
+    </nav>
+
+      <nav>
         <div class="logo">G.<span>D</span> </div>
         <ul>
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
-            <li>Project</li>
-            <li>Services</li>
+          
 
         </ul>
+        <button>Click me </button>
+    </nav>
+
+
+        <nav class="thirdNav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          
+
+        </ul>
+        <div class="logo">G.<span>D</span> </div>
+
+        <button>Click me </button>
+    </nav>
+
+
+      <nav class="thirdNav">
+        <div class="logo">G.<span>D</span> </div>
+
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          
+
+        </ul>
+
+        <button>Click me </button>
     </nav>
 </body>
 </html>
